@@ -4,6 +4,9 @@ on:
   workflow_run:
     workflows: [Dev Coba Workflow]
     types: [completed]
+  workflow_dispatch:
+  schedule:
+    - cron: '0 9 * * 1-5'
 
 jobs:
   functional_tests_stage:

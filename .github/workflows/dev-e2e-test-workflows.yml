@@ -3,10 +3,7 @@ name: Dev E2E Tests Workflow
 on:
   workflow_dispatch:
   schedule:
-    - cron: '45 6 * * *'
-  workflow_run:
-    workflows: [Dev Coba Workflow]
-    types: [completed]
+    - cron: '55 6 * * *'
 
 jobs:
   functional_tests_stage:

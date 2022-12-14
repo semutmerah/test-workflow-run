@@ -4,10 +4,13 @@ on:
   workflow_run:
     workflows: [Dev Coba Workflow]
     types: [completed]
+  workflow_dispatch:
+  schedule:
+    - cron: '30 6 * * 1-5'
 
 jobs:
   functional_tests_stage:
-    name: Functional-tests
+    name: Functional-tests-dev
     runs-on: ubuntu-22.04
     steps:
       - run: echo "hello world dev apapun"

@@ -7,7 +7,7 @@ on:
 
 jobs:
   functional_tests_stage:
-    name: Functional-tests
+    name: Functional-tests-dev
     runs-on: ubuntu-22.04
     steps:
       - run: echo "hello world dev apapun"

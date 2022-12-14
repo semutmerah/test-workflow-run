@@ -1,4 +1,4 @@
-name: Dev E2E Tests Workflow
+name: E2E Tests Workflow
 
 on:
   workflow_run:

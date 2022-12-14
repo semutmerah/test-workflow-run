@@ -1,0 +1,13 @@
+name: Dev Coba Workflow
+
+on:
+  push:
+    branches:
+      - development
+
+jobs:
+  coba-jobs:
+    name: Coba Jobs
+    runs-on: ubuntu-22.04
+    steps:
+      - run: echo "hello world dev"

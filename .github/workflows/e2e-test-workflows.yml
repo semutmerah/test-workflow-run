@@ -1,0 +1,13 @@
+name: Dev E2E Tests Workflow
+
+on:
+  workflow_run:
+    workflows: [Coba Workflow]
+    types: [completed]
+
+jobs:
+  functional_tests_stage:
+    name: Functional-tests
+    runs-on: ubuntu-22.04
+    steps:
+      - run: echo "hello world"
